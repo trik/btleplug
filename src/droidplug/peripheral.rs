@@ -114,6 +114,9 @@ impl Peripheral {
         E: From<::jni::errors::Error>,
     {
         let env = global_jvm().get_env()?;
+        if env.exception_check()? {
+            env.exception_clear()?
+        }
         let obj = JPeripheral::from_env(&env, self.internal.as_obj())?;
         f(&env, obj)
     }
