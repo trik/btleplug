@@ -1,0 +1,6 @@
+[target.armv7-linux-androideabi]
+rustflags = [
+  "-C", "linker-flavor=ld.lld",
+  "-L", "C:\\Users\\marco\\AppData\\Local\\Android\\Sdk\\ndk\\25.2.9519653\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\14.0.7\\lib\\linux\\arm",
+  "-L", "C:\\Users\\marco\\AppData\\Local\\Android\\Sdk\\ndk\\25.2.9519653\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\arm-linux-androideabi\\33",
+]

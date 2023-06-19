@@ -34,7 +34,3 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 }
-
-dependencies {
-    implementation 'io.github.gedgygedgy.rust:jni-utils:0.1.0-SNAPSHOT'
-}
