@@ -8,7 +8,6 @@ use crate::{
 use async_trait::async_trait;
 use futures::stream::Stream;
 use jni::{
-    descriptors,
     objects::{GlobalRef, JList, JObject},
     JNIEnv,
 };
